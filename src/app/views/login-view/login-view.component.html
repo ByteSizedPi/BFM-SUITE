@@ -1,0 +1,21 @@
+<div class="login-container center">
+  <mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <div class="column center card-content">
+      <mat-form-field appearance="outline" color="accent" class="w-100">
+        <mat-label>Username</mat-label>
+        <input matInput spellcheck="false" required />
+        <mat-error *ngIf="formValid">error</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline" color="accent" class="w-100">
+        <mat-label>Password</mat-label>
+        <input matInput spellcheck="false" required type="password" />
+        <mat-error *ngIf="formValid">error</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="row space-between">
+      <button mat-stroked-button color="accent">REGISTER</button>
+      <button mat-raised-button color="accent">LOGIN</button>
+    </div>
+  </mat-card>
+</div>
